@@ -17,11 +17,15 @@ export default function Home() {
                 <span className='text-yellow-500'> terpercaya </span> 
               </h1>
               <p className=' text-white'>
-              menyediakan berbagai buah musiman dan lokal, kustomisasi tergantung kebutuhan anda. Komitmen kami untuk memberikan kulaitas
+                menyediakan berbagai buah musiman dan lokal, kustomisasi tergantung kebutuhan anda. Komitmen kami untuk memberikan kulaitas
               </p>
-              <div className="flex mt-10">
-                <button>Hello</button>
-                {/* <GotoButton link='https://wa.me/6281217692430' text='hubungi kami' /> */}
+              <div className="mt-10">
+                <button className="bg-orange-400 px-3 py-1 rounded block hover:border-yellow-300 border-orange-400 border-4 text-xl font-bold text-white box-content">
+                  Pesan Sekarang
+                </button>
+                <small className="text-white">
+                  - 16 klien telah percaya kepada kami -
+                </small>
               </div>
             </div>
             <div className="basis-2/3">
