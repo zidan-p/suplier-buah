@@ -4,6 +4,7 @@ import { Navbar } from "~/components/navbar";
 import Melon from "~/assets/img/melon.jpg";
 import PinapleRotate from "~/assets/img/pinapple-rotate.jpg"
 import LeafIcon from "~/assets/icon/leaf.svg";
+import LeafOrange from "~/assets/icon/leaf-orange.svg?url";
 import RightArrow from "~/assets/icon/right-arrow.svg";
 import FeedBack from "~/assets/icon/feedback.svg";
 import LabelIcon from "~/assets/icon/label.svg";
@@ -58,6 +59,15 @@ export default function Home() {
             </div>
           </div>
         </div>
+      </section>
+
+      <section
+        style={{
+          height: "30px",
+          backgroundImage: "url(" + LeafOrange.src + ")",
+          backgroundSize: "contain"
+        }}
+      >
       </section>
 
       <section className="py-20 px-44">
