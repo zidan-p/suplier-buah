@@ -5,6 +5,8 @@ import Melon from "~/assets/img/melon.jpg";
 import PinapleRotate from "~/assets/img/pinapple-rotate.jpg"
 import LeafIcon from "~/assets/icon/leaf.svg";
 import RightArrow from "~/assets/icon/right-arrow.svg";
+import FeedBack from "~/assets/icon/feedback.svg";
+import LabelIcon from "~/assets/icon/label.svg";
 import { cn } from "~/libs/tw-merge";
 
 export default function Home() {
@@ -58,16 +60,38 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="py-20 px-36">
+      <section className="py-20 px-44">
         <div className="flex gap-2">
           
-          <div className="border p-2 rounded">
+          <div className="border p-2 rounded-xl basis-1/3 shadow">
             <h2 className="flex gap-2 text-lg font-bold   items-center">
-              {/* <LeafIcon className="w-5" /> */}
-              Buah Musiman
+              <LeafIcon className="w-5 text-orange-500" />
+              <p className="text-green-800">Buah Musiman</p>
             </h2>
             <p className="">
               kami selalu menyiapkan buah musiman terbaik sesuai pasar
+            </p>
+          </div>
+          <div className="border p-2 rounded-xl basis-1/3 shadow">
+            <h2 className="flex gap-2 text-lg font-bold   items-center">
+              <FeedBack className="w-5 text-orange-500" />
+              <p className="text-green-800">
+                Permintaan
+              </p>
+            </h2>
+            <p className="">
+              Kami menerima kustomisasi permintaan untuk bisnis anda.
+            </p>
+          </div>
+          <div className="border p-2 rounded-xl basis-1/3 shadow">
+            <h2 className="flex gap-2 text-lg font-bold   items-center">
+              <LabelIcon className="w-5 text-orange-500" />
+              <p className="text-green-800">
+                Buah Import
+              </p>
+            </h2>
+            <p className="">
+            Pun Kami juga menyediakan buah import sesuai dengan pesanan anda
             </p>
           </div>
 
