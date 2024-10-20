@@ -370,6 +370,31 @@ export default function Home() {
               Melon
             </p>
           </div>
+          <div 
+            style={{
+              backgroundImage: `url(${OrageIMG.src})`,
+              backgroundSize: "cover",
+              width: "100%",
+              height: "300px"
+            }}
+            className="rounded relative transition-all overflow-hidden" 
+          >
+            <div className="h-full w-full bg-black/70 absolute" />
+            <div className=" justify-center relative flex flex-col h-full w-full ">
+              <p className="text-white text-center font-bold">Dan Lebih Banyak Lagi</p>
+              <button className={cn(
+                  "bg-orange-400  px-6 py-1 mx-auto  rounded relative  flex gap-3 items-center group",
+                  " transition-all overflow-hidden")
+                }>
+                  <div className="group-hover:-translate-x-5 transition-all">
+                    <p className="text-xl font-bold text-white box-content ">
+                      Pesan Sekarang
+                    </p>
+                  </div>
+                  <RightArrow className="w-7 text-white absolute right-0 translate-x-6 group-hover:translate-x-0 transition" />
+                </button>
+            </div>
+          </div>
         </div>
       </section>
 
