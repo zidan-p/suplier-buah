@@ -9,6 +9,9 @@ import RightArrow from "~/assets/icon/right-arrow.svg";
 import FeedBack from "~/assets/icon/feedback.svg";
 import LabelIcon from "~/assets/icon/label.svg";
 import { cn } from "~/libs/tw-merge";
+import LoadGoodsIMG from "~/assets/img/load-goods.jpg"
+import CrisltallIMG from "~/assets/img/crystal.jpg";
+import Orange2IMG from "~/assets/img/orange-2.jpg"
 
 export default function Home() {
   return (
@@ -61,6 +64,7 @@ export default function Home() {
         </div>
       </section>
 
+      {/* transition section */}
       <section
         style={{
           height: "30px",
@@ -70,10 +74,20 @@ export default function Home() {
       >
       </section>
 
-      <section className="py-20 px-44">
+      {/* features section */}
+      <section className="py-20 px-64">
+        <h1 className="text-5xl font-bold text-center text-green-800">
+          <span className="text-orange-600">~ </span> 
+            Fitur Kami
+          <span className="text-orange-600"> ~</span>
+        </h1>
+
+        <p className="text-center mb-16">
+          apa yang bisa anda dapat dari kami
+        </p>
         <div className="flex gap-2">
           
-          <div className="border p-2 rounded-xl basis-1/3 shadow">
+          <div className="border p-5 rounded-xl basis-1/3 shadow">
             <h2 className="flex gap-2 text-lg font-bold   items-center">
               <LeafIcon className="w-5 text-orange-500" />
               <p className="text-green-800">Buah Musiman</p>
@@ -82,7 +96,7 @@ export default function Home() {
               kami selalu menyiapkan buah musiman terbaik sesuai pasar
             </p>
           </div>
-          <div className="border p-2 rounded-xl basis-1/3 shadow">
+          <div className="border p-5 rounded-xl basis-1/3 shadow">
             <h2 className="flex gap-2 text-lg font-bold   items-center">
               <FeedBack className="w-5 text-orange-500" />
               <p className="text-green-800">
@@ -93,7 +107,7 @@ export default function Home() {
               Kami menerima kustomisasi permintaan untuk bisnis anda.
             </p>
           </div>
-          <div className="border p-2 rounded-xl basis-1/3 shadow">
+          <div className="border p-5 rounded-xl basis-1/3 shadow">
             <h2 className="flex gap-2 text-lg font-bold   items-center">
               <LabelIcon className="w-5 text-orange-500" />
               <p className="text-green-800">
@@ -104,8 +118,69 @@ export default function Home() {
             Pun Kami juga menyediakan buah import sesuai dengan pesanan anda
             </p>
           </div>
-
         </div> 
+      </section>
+
+      {/* benefit section */}
+      <section className="py-20 px-64">
+
+        <h1 className="text-5xl font-bold text-center text-green-800">
+          <span className="text-orange-600">~ </span> 
+          Benefit Kami
+          <span className="text-orange-600"> ~</span>
+        </h1>
+
+        <p className="text-center mb-16">
+          Benefit didapatkan  yang bisa membuat bisnis Anda lebih efektif, efisien, dan menguntungkan.
+        </p>
+
+        <div className="flex flex-col md:flex-row md:justify-center gap-10 items-center mb-20 md:mb-10">
+          <div className="basis-1/2">
+            <ImgCard
+              title='Pengawasan Kami'
+              description='setiap ayam yang kami polihara selalu dalam pengawasan kami 24 jam. kebutuhan mereka selalu kita penuhi untuk hasil produk yang memuaskan'
+              img={<Image src={LoadGoodsIMG} alt='ini adalah chicken farm' className="rounded-lg" width={"600"} height={"600"} />}
+            />
+          </div>
+          <div className="basis-1/2">
+            <h2 className='text-3xl font-bold mb-8 text-green-800'>Pemasokan Rutin</h2>
+            <p className='text-lg'>
+            Kami memastikan pasokan kopi Anda tetap lancar dan tersedia sesuai kebutuhan. Dengan sistem distribusi yang andal dan terorganisir, pelanggan tidak perlu khawatir akan kekurangan stok atau ketidakpastian dalam pengiriman. Ketersediaan kopi berkualitas tetap terjaga untuk memenuhi permintaan bisnis atau konsumsi pribadi Anda setiap saat.
+            </p>
+          </div>
+        </div>
+
+        <div className="flex flex-col md:flex-row-reverse md:justify-center gap-10 items-center mb-20 md:mb-10">
+          <div className="basis-1/2">
+            <ImgCard
+              title='Pengawasan Kami'
+              description='setiap ayam yang kami polihara selalu dalam pengawasan kami 24 jam. kebutuhan mereka selalu kita penuhi untuk hasil produk yang memuaskan'
+              img={<Image src={CrisltallIMG} alt='ini adalah chicken farm' className="rounded-lg" width={"500"} height={"600"} />}
+            />
+          </div>
+          <div className="basis-1/2">
+            <h2 className='text-3xl font-bold mb-8 text-green-800'>Beragam Pilihan</h2>
+            <p className='text-lg'>
+            Kami menyediakan berbagai pilihan buah, mulai dari buah lokal hingga buah impor dengan kualitas premium. Beragam pilihan ini memungkinkan Anda untuk menyesuaikan produk yang diinginkan berdasarkan kebutuhan pasar, musim, atau preferensi konsumen. Dengan variasi buah yang lengkap, Anda bisa memenuhi kebutuhan pelanggan dari berbagai segmen dengan lebih fleksibel.
+            </p>
+          </div>
+        </div>
+
+        <div className="flex flex-col md:flex-row md:justify-center gap-10 items-center mb-20 md:mb-10">
+          <div className="basis-1/2">
+            <ImgCard
+              title='Pengawasan Kami'
+              description='setiap ayam yang kami polihara selalu dalam pengawasan kami 24 jam. kebutuhan mereka selalu kita penuhi untuk hasil produk yang memuaskan'
+              img={<Image src={Orange2IMG} alt='ini adalah chicken farm' className="rounded-lg" width={"600"} height={"600"} />}
+            />
+          </div>
+          <div className="basis-1/2">
+            <h2 className='text-3xl font-bold mb-8 text-green-800'>Komitmen terjaga</h2>
+            <p className='text-lg'>
+            Kami memastikan bahwa setiap buah yang kami suplai sesuai dengan standar kualitas yang ketat. Dengan kontrol mutu yang terjaga di setiap tahap, dari panen hingga distribusi, kami memberikan jaminan bahwa setiap pengiriman memenuhi ekspektasi. Selain itu, komitmen kami dalam menjaga hubungan yang baik dengan pelanggan juga tercermin dalam pelayanan yang responsif dan profesional.            </p>
+          </div>
+        </div>
+
       </section>
 
     </main>
