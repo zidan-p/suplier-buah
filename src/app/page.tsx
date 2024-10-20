@@ -398,6 +398,28 @@ export default function Home() {
         </div>
       </section>
 
+      {/* last call to action */}
+      <section className="py-20 px-64">
+        <h1 className="text-5xl font-bold text-center mb-2 text-green-800">
+          Percayakan Kepada kami
+        </h1>
+        <p className="text-center mb-4">
+        Jangan biarkan bisnis Anda terhambat oleh pasokan yang tidak pasti atau pilihan yang terbatas. Dengan layanan kami, Anda mendapatkan jaminan pasokan buah segar, beragam pilihan produk berkualitas, dan komitmen yang tak tergoyahkan.
+        </p>
+
+        <button className={cn(
+            "bg-orange-400  px-6 py-2 shadow rounded relative flex gap-3 items-center group",
+            " transition-all overflow-hidden mx-auto")
+          }>
+            <div className="group-hover:-translate-x-5 transition-all">
+              <p className="text-xl font-bold text-white box-content ">
+                Pesan Sekarang
+              </p>
+            </div>
+            <RightArrow className="w-7 text-white absolute right-0 translate-x-6 group-hover:translate-x-0 transition" />
+          </button>
+      </section>
+
       <footer className={cn(
         "md:px-36 md:py-20 md:flex-row",
         "px-10 py-5 gap-6 items-center flex flex-col-reverse justify-between",
