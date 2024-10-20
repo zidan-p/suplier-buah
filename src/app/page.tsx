@@ -3,6 +3,7 @@ import { ImgCard } from "~/components/img-card";
 import { Navbar } from "~/components/navbar";
 import Melon from "~/assets/img/melon.jpg";
 import PinapleRotate from "~/assets/img/pinapple-rotate.jpg"
+import LeafIcon from "~/assets/icon/leaf.svg";
 
 export default function Home() {
   return (
@@ -20,12 +21,14 @@ export default function Home() {
                 menyediakan berbagai buah musiman dan lokal, kustomisasi tergantung kebutuhan anda. Komitmen kami untuk memberikan kulaitas
               </p>
               <div className="mt-10">
-                <button className="bg-orange-400 px-3 py-1 rounded block hover:border-yellow-300 border-orange-400 border-4 text-xl font-bold text-white box-content">
-                  Pesan Sekarang
+                <button className="bg-orange-400 px-3 py-1 rounded block hover:border-yellow-300 border-orange-400 border-4 ">
+                  <p className="text-xl font-bold text-white box-content">
+                    Pesan Sekarang
+                  </p>
+                  <small className="text-white">
+                    - 16 klien telah percaya kepada kami -
+                  </small>
                 </button>
-                <small className="text-white">
-                  - 16 klien telah percaya kepada kami -
-                </small>
               </div>
             </div>
             <div className="basis-2/3">
@@ -42,11 +45,25 @@ export default function Home() {
                   title='Produksi Telur'
                   description='Hasil Telur dari kami setiap harinya. rata-rata bisa menghasilkan 2 peti lebih'
                 />
-              {/* <div className="">
-              </div> */}
             </div>
           </div>
         </div>
+      </section>
+
+      <section className="py-20 px-36">
+        <div className="flex gap-2">
+          
+          <div className="border p-2 rounded">
+            <h2 className="flex gap-2 text-lg font-bold   items-center">
+              {/* <LeafIcon className="w-5" /> */}
+              Buah Musiman
+            </h2>
+            <p className="">
+              kami selalu menyiapkan buah musiman terbaik sesuai pasar
+            </p>
+          </div>
+
+        </div> 
       </section>
 
     </main>
