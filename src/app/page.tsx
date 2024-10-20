@@ -12,6 +12,16 @@ import { cn } from "~/libs/tw-merge";
 import LoadGoodsIMG from "~/assets/img/load-goods.jpg"
 import CrisltallIMG from "~/assets/img/crystal.jpg";
 import Orange2IMG from "~/assets/img/orange-2.jpg"
+import AvocadoIMG from "~/assets/img/avocado.jpg";
+import DragonFruitCOntainer from "~/assets/img/dragon-fruit-conatiner.jpg";
+import MangoIMG from "~/assets/img/mango.jpg";
+import MangosteenIMG from "~/assets/img/mangosteen.jpg"
+import OrageIMG from "~/assets/img/orange.jpg"
+import PinenappleIMG from "~/assets/img/pinapple.jpg";
+import RambutanIMG from "~/assets/img/rambutan-load.jpg"
+import SalakIMG from "~/assets/img/salak-2.jpg"
+import WaterMelonIMG from "~/assets/img/watermelon.jpg"
+
 
 export default function Home() {
   return (
@@ -74,7 +84,7 @@ export default function Home() {
       >
       </section>
 
-      {/* features section */}
+        {/* features section */}
       <section className="py-20 px-64">
         <h1 className="text-5xl font-bold text-center text-green-800">
           <span className="text-orange-600">~ </span> 
@@ -87,7 +97,7 @@ export default function Home() {
         </p>
         <div className="flex gap-2">
           
-          <div className="border p-5 rounded-xl basis-1/3 shadow">
+          <div className="border p-5 rounded-xl basis-1/3 shadow-sm">
             <h2 className="flex gap-2 text-lg font-bold   items-center">
               <LeafIcon className="w-5 text-orange-500" />
               <p className="text-green-800">Buah Musiman</p>
@@ -96,7 +106,7 @@ export default function Home() {
               kami selalu menyiapkan buah musiman terbaik sesuai pasar
             </p>
           </div>
-          <div className="border p-5 rounded-xl basis-1/3 shadow">
+          <div className="border p-5 rounded-xl basis-1/3 shadow-sm">
             <h2 className="flex gap-2 text-lg font-bold   items-center">
               <FeedBack className="w-5 text-orange-500" />
               <p className="text-green-800">
@@ -107,7 +117,7 @@ export default function Home() {
               Kami menerima kustomisasi permintaan untuk bisnis anda.
             </p>
           </div>
-          <div className="border p-5 rounded-xl basis-1/3 shadow">
+          <div className="border p-5 rounded-xl basis-1/3 shadow-sm">
             <h2 className="flex gap-2 text-lg font-bold   items-center">
               <LabelIcon className="w-5 text-orange-500" />
               <p className="text-green-800">
@@ -181,6 +191,186 @@ export default function Home() {
           </div>
         </div>
 
+      </section>
+
+      {/* product section */}
+      <section className="py-20 px-64">
+        <h1 className="text-5xl font-bold text-center text-green-800">
+          <span className="text-orange-600">~ </span> 
+          Produk Kami
+          <span className="text-orange-600"> ~</span>
+        </h1>
+
+        <p className="text-center mb-16">
+          Benefit didapatkan  yang bisa membuat bisnis Anda lebih efektif, efisien, dan menguntungkan.
+        </p>
+        <div className="grid grid-cols-3 gap-4">
+          <div 
+            style={{
+              backgroundImage: `url(${CrisltallIMG.src})`,
+              backgroundSize: "cover",
+              width: "100%",
+              height: "300px"
+            }}
+            className="rounded relative brightness-75 hover:brightness-100 transition-all group overflow-hidden" 
+          >
+            <p className={cn(
+              "text-lg font-bold py-1 px-2 absolute right-0 left-0 -translate-y-9",
+              " group-hover:translate-y-0 transition-all bg-white/45")}>
+              Jambu Kristal
+            </p>
+          </div>
+          <div 
+            style={{
+              backgroundImage: `url(${Orange2IMG.src})`,
+              backgroundSize: "cover",
+              width: "100%",
+              height: "300px"
+            }}
+            className="rounded relative brightness-75 hover:brightness-100 transition-all group overflow-hidden" 
+          >
+            <p className={cn(
+              "text-lg font-bold py-1 px-2 absolute right-0 left-0 -translate-y-9",
+              " group-hover:translate-y-0 transition-all bg-white/45")}>
+              Jeruk
+            </p>
+          </div>
+          <div 
+            style={{
+              backgroundImage: `url(${AvocadoIMG.src})`,
+              backgroundSize: "cover",
+              width: "100%",
+              height: "300px"
+            }}
+            className="rounded relative brightness-75 hover:brightness-100 transition-all group overflow-hidden" 
+          >
+            <p className={cn(
+              "text-lg font-bold py-1 px-2 absolute right-0 left-0 -translate-y-9",
+              " group-hover:translate-y-0 transition-all bg-white/45")}>
+              Alpukat
+            </p>
+          </div>
+          <div 
+            style={{
+              backgroundImage: `url(${DragonFruitCOntainer.src})`,
+              backgroundSize: "cover",
+              width: "100%",
+              height: "300px"
+            }}
+            className="rounded relative brightness-75 hover:brightness-100 transition-all group overflow-hidden" 
+          >
+            <p className={cn(
+              "text-lg font-bold py-1 px-2 absolute right-0 left-0 -translate-y-9",
+              " group-hover:translate-y-0 transition-all bg-white/45")}>
+              Buah Naga
+            </p>
+          </div>
+          <div 
+            style={{
+              backgroundImage: `url(${MangoIMG.src})`,
+              backgroundSize: "cover",
+              width: "100%",
+              height: "300px"
+            }}
+            className="rounded relative brightness-75 hover:brightness-100 transition-all group overflow-hidden" 
+          >
+            <p className={cn(
+              "text-lg font-bold py-1 px-2 absolute right-0 left-0 -translate-y-9",
+              " group-hover:translate-y-0 transition-all bg-white/45")}>
+              Mangga
+            </p>
+          </div>
+          <div 
+            style={{
+              backgroundImage: `url(${MangosteenIMG.src})`,
+              backgroundSize: "cover",
+              width: "100%",
+              height: "300px"
+            }}
+            className="rounded relative brightness-75 hover:brightness-100 transition-all group overflow-hidden" 
+          >
+            <p className={cn(
+              "text-lg font-bold py-1 px-2 absolute right-0 left-0 -translate-y-9",
+              " group-hover:translate-y-0 transition-all bg-white/45")}>
+              Manggis
+            </p>
+          </div>
+          <div 
+            style={{
+              backgroundImage: `url(${PinenappleIMG.src})`,
+              backgroundSize: "cover",
+              width: "100%",
+              height: "300px"
+            }}
+            className="rounded relative brightness-75 hover:brightness-100 transition-all group overflow-hidden" 
+          >
+            <p className={cn(
+              "text-lg font-bold py-1 px-2 absolute right-0 left-0 -translate-y-9",
+              " group-hover:translate-y-0 transition-all bg-white/45")}>
+              Nanas
+            </p>
+          </div>
+          <div 
+            style={{
+              backgroundImage: `url(${RambutanIMG.src})`,
+              backgroundSize: "cover",
+              width: "100%",
+              height: "300px"
+            }}
+            className="rounded relative brightness-75 hover:brightness-100 transition-all group overflow-hidden" 
+          >
+            <p className={cn(
+              "text-lg font-bold py-1 px-2 absolute right-0 left-0 -translate-y-9",
+              " group-hover:translate-y-0 transition-all bg-white/45")}>
+              Rambutan
+            </p>
+          </div>
+          <div 
+            style={{
+              backgroundImage: `url(${SalakIMG.src})`,
+              backgroundSize: "cover",
+              width: "100%",
+              height: "300px"
+            }}
+            className="rounded relative brightness-75 hover:brightness-100 transition-all group overflow-hidden" 
+          >
+            <p className={cn(
+              "text-lg font-bold py-1 px-2 absolute right-0 left-0 -translate-y-9",
+              " group-hover:translate-y-0 transition-all bg-white/45")}>
+              Salak
+            </p>
+          </div>
+          <div 
+            style={{
+              backgroundImage: `url(${WaterMelonIMG.src})`,
+              backgroundSize: "cover",
+              width: "100%",
+              height: "300px"
+            }}
+            className="rounded relative brightness-75 hover:brightness-100 transition-all group overflow-hidden" 
+          >
+            <p className={cn(
+              "text-lg font-bold py-1 px-2 absolute right-0 left-0 -translate-y-9",
+              " group-hover:translate-y-0 transition-all bg-white/45")}>
+              Semangka
+            </p>
+          </div>
+          <div 
+            style={{
+              backgroundImage: `url(${Melon.src})`,
+              backgroundSize: "cover",
+              width: "100%",
+              height: "300px"
+            }}
+            className="rounded relative brightness-75 hover:brightness-100 transition-all group overflow-hidden" 
+          >
+            <p className={cn(
+              "text-lg font-bold py-1 px-2 absolute right-0 left-0 -translate-y-9",
+              " group-hover:translate-y-0 transition-all bg-white/45")}>
+              Melon
+            </p>
+          </div>
+        </div>
       </section>
 
     </main>
