@@ -4,6 +4,8 @@ import { Navbar } from "~/components/navbar";
 import Melon from "~/assets/img/melon.jpg";
 import PinapleRotate from "~/assets/img/pinapple-rotate.jpg"
 import LeafIcon from "~/assets/icon/leaf.svg";
+import RightArrow from "~/assets/icon/right-arrow.svg";
+import { cn } from "~/libs/tw-merge";
 
 export default function Home() {
   return (
@@ -21,13 +23,19 @@ export default function Home() {
                 menyediakan berbagai buah musiman dan lokal, kustomisasi tergantung kebutuhan anda. Komitmen kami untuk memberikan kulaitas
               </p>
               <div className="mt-10">
-                <button className="bg-orange-400 px-3 py-1 rounded block hover:border-yellow-300 border-orange-400 border-4 ">
-                  <p className="text-xl font-bold text-white box-content">
-                    Pesan Sekarang
-                  </p>
-                  <small className="text-white">
-                    - 16 klien telah percaya kepada kami -
-                  </small>
+                <button className={cn(
+                  "bg-orange-400  px-6 py-1 rounded relative flex gap-3 items-center group",
+                  " transition-all overflow-hidden")
+                }>
+                  <div className="group-hover:-translate-x-5 transition-all">
+                    <p className="text-xl font-bold text-white box-content ">
+                      Pesan Sekarang
+                    </p>
+                    <small className="text-white ">
+                      - 16 klien telah percaya kepada kami -
+                    </small>
+                  </div>
+                  <RightArrow className="w-7 text-white absolute right-0 translate-x-6 group-hover:translate-x-0 transition" />
                 </button>
               </div>
             </div>
