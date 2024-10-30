@@ -3,9 +3,9 @@ import clsx from "clsx";
 import { useEffect, useState } from "react";
 
 
-interface NavbarProps {
-  backgroundShow?: boolean;
-}
+// interface NavbarProps {
+//   backgroundShow?: boolean;
+// }
 
 export function Navbar(){
 
