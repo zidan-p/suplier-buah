@@ -26,7 +26,7 @@ import WaterMelonIMG from "~/assets/img/watermelon.jpg"
 export default function Home() {
   return (
     <main>
-      {/* <Navbar /> */}
+      <Navbar />
       <section className="min-h-screen sm:h-screen bg-green-600 pt-20 xl:py-20 px-5 lg:px-20 xl:px-36 ">
         <div className="flex flex-col justify-center gap-10 items-center h-full container mx-auto">
           <div className="flex flex-col lg:flex-row md:flex-row w-full justify-between gap-20 items-center">
