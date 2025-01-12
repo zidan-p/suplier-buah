@@ -26,11 +26,11 @@ import WaterMelonIMG from "~/assets/img/watermelon.jpg"
 export default function Home() {
   return (
     <main>
-      <Navbar />
-      <section className="min-h-screen sm:h-screen bg-green-600 py-20 px-36 ">
+      {/* <Navbar /> */}
+      <section className="min-h-screen sm:h-screen bg-green-600 pt-20 xl:py-20 px-5 lg:px-20 xl:px-36 ">
         <div className="flex flex-col justify-center gap-10 items-center h-full container mx-auto">
-          <div className="flex flex-col md:flex-row w-full justify-between gap-20 items-center">
-            <div className="basis-1/3">
+          <div className="flex flex-col lg:flex-row md:flex-row w-full justify-between gap-20 items-center">
+            <div className="basis-1/3 text-center md:text-start">
               <h1 className={" text-5xl font-bold text-white mb-2"}>
                 Supplier buah 
                 <span className='text-yellow-500'> terpercaya </span> 
@@ -38,10 +38,10 @@ export default function Home() {
               <p className=' text-white'>
                 menyediakan berbagai buah musiman dan lokal, kustomisasi tergantung kebutuhan anda. Komitmen kami untuk memberikan kulaitas
               </p>
-              <div className="mt-10">
+              <div className="mt-10 ">
                 <button className={cn(
-                  "bg-orange-400  px-6 py-1 rounded relative flex gap-3 items-center group",
-                  " transition-all overflow-hidden")
+                  "bg-orange-400 text-center px-6 py-1 rounded relative flex gap-3 items-center group",
+                  " transition-all overflow-hidden mx-auto md:mx-0")
                 }>
                   <div className="group-hover:-translate-x-5 transition-all">
                     <p className="text-xl font-bold text-white box-content ">
@@ -75,17 +75,17 @@ export default function Home() {
       </section>
 
       {/* transition section */}
-      <section
+      {/* <section
         style={{
           height: "30px",
           backgroundImage: "url(" + LeafOrange.src + ")",
           backgroundSize: "contain"
         }}
       >
-      </section>
+      </section> */}
 
         {/* features section */}
-      <section className="py-20 px-64">
+      {/* <section className="py-20 px-64">
         <h1 className="text-5xl font-bold text-center text-green-800">
           <span className="text-orange-600">~ </span> 
             Fitur Kami
@@ -129,10 +129,10 @@ export default function Home() {
             </p>
           </div>
         </div> 
-      </section>
+      </section> */}
 
       {/* benefit section */}
-      <section className="py-20 px-64">
+      {/* <section className="py-20 px-64">
 
         <h1 className="text-5xl font-bold text-center text-green-800">
           <span className="text-orange-600">~ </span> 
@@ -191,10 +191,10 @@ export default function Home() {
           </div>
         </div>
 
-      </section>
+      </section> */}
 
       {/* product section */}
-      <section className="py-20 px-64">
+      {/* <section className="py-20 px-64">
         <h1 className="text-5xl font-bold text-center text-green-800">
           <span className="text-orange-600">~ </span> 
           Produk Kami
@@ -396,10 +396,10 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* last call to action */}
-      <section className="py-20 px-64">
+      {/* <section className="py-20 px-64">
         <h1 className="text-5xl font-bold text-center mb-2 text-green-800">
           Percayakan Kepada kami
         </h1>
@@ -418,9 +418,10 @@ export default function Home() {
             </div>
             <RightArrow className="w-7 text-white absolute right-0 translate-x-6 group-hover:translate-x-0 transition" />
           </button>
-      </section>
+      </section> */}
 
-      <footer className={cn(
+      {/* Footer */}
+      {/* <footer className={cn(
         "md:px-36 md:py-20 md:flex-row",
         "px-10 py-5 gap-6 items-center flex flex-col-reverse justify-between",
         "text-white bg-green-800"
@@ -468,7 +469,7 @@ export default function Home() {
               </a>
           </div>
         </div>
-      </footer>
+      </footer> */}
     </main>
   );
 }
