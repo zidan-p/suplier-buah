@@ -194,8 +194,8 @@ export default function Home() {
       </section>
 
       {/* product section */}
-      {/* <section className="py-20 px-64">
-        <h1 className="text-5xl font-bold text-center text-green-800">
+      <section className="py-20 px-5 lg:px-20 xl:px-64">
+        <h1 className="text-3xl md:text-5xl font-bold text-center text-green-800">
           <span className="text-orange-600">~ </span> 
           Produk Kami
           <span className="text-orange-600"> ~</span>
@@ -204,7 +204,7 @@ export default function Home() {
         <p className="text-center mb-16">
           Benefit didapatkan  yang bisa membuat bisnis Anda lebih efektif, efisien, dan menguntungkan.
         </p>
-        <div className="grid grid-cols-3 gap-4">
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
           <div 
             style={{
               backgroundImage: `url(${CrisltallIMG.src})`,
@@ -396,7 +396,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section> */}
+      </section>
 
       {/* last call to action */}
       {/* <section className="py-20 px-64">
