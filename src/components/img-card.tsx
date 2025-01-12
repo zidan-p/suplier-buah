@@ -13,7 +13,10 @@ interface ImgCardProps{
 
 export function ImgCard({rotate = true, showText = false,...props}: ImgCardProps){
   return (
-    <div className={`relative transition overflow-hidden rounded-xl group shadow-xl p-1 bg-white ${rotate ? "rotate-2 hover:rotate-0" : ""}`}>
+    <div className={`
+      relative transition overflow-hidden rounded-xl w-fit
+      group shadow-xl p-1 bg-white ${rotate ? "rotate-2 hover:rotate-0" : ""}`
+    }>
       {props.img}
       <div className={`transition absolute bottom-0 right-0 left-0 p-2 bg-white/70 ${showText ? "" : "translate-y-36 group-hover:translate-y-0"}`}>
         <h5 className='text-lg font-bold'>{props.title}</h5>

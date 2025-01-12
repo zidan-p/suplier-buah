@@ -86,7 +86,7 @@ export default function Home() {
 
         {/* features section */}
       <section className="py-20 px-5 lg:px-20 xl:px-64">
-        <h1 className="text-5xl font-bold text-center text-green-800">
+        <h1 className="text-3xl md:text-5xl font-bold text-center text-green-800">
           <span className="text-orange-600">~ </span> 
             Fitur Kami
           <span className="text-orange-600"> ~</span>
@@ -132,9 +132,9 @@ export default function Home() {
       </section>
 
       {/* benefit section */}
-      {/* <section className="py-20 px-64">
+      <section className="py-20 px-5 lg:px-20 xl:px-64">
 
-        <h1 className="text-5xl font-bold text-center text-green-800">
+        <h1 className="text-3xl md:text-5xl font-bold text-center text-green-800">
           <span className="text-orange-600">~ </span> 
           Benefit Kami
           <span className="text-orange-600"> ~</span>
@@ -191,7 +191,7 @@ export default function Home() {
           </div>
         </div>
 
-      </section> */}
+      </section>
 
       {/* product section */}
       {/* <section className="py-20 px-64">
