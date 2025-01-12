@@ -399,7 +399,7 @@ export default function Home() {
       </section>
 
       {/* last call to action */}
-      {/* <section className="py-20 px-64">
+      <section className="py-20 px-5 lg:px-20 xl:px-64">
         <h1 className="text-5xl font-bold text-center mb-2 text-green-800">
           Percayakan Kepada kami
         </h1>
@@ -418,10 +418,10 @@ export default function Home() {
             </div>
             <RightArrow className="w-7 text-white absolute right-0 translate-x-6 group-hover:translate-x-0 transition" />
           </button>
-      </section> */}
+      </section>
 
       {/* Footer */}
-      {/* <footer className={cn(
+      <footer className={cn(
         "md:px-36 md:py-20 md:flex-row",
         "px-10 py-5 gap-6 items-center flex flex-col-reverse justify-between",
         "text-white bg-green-800"
@@ -469,7 +469,7 @@ export default function Home() {
               </a>
           </div>
         </div>
-      </footer> */}
+      </footer>
     </main>
   );
 }
