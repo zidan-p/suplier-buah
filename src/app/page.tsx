@@ -75,17 +75,17 @@ export default function Home() {
       </section>
 
       {/* transition section */}
-      {/* <section
+      <section
         style={{
           height: "30px",
           backgroundImage: "url(" + LeafOrange.src + ")",
           backgroundSize: "contain"
         }}
       >
-      </section> */}
+      </section>
 
         {/* features section */}
-      {/* <section className="py-20 px-64">
+      <section className="py-20 px-5 lg:px-20 xl:px-64">
         <h1 className="text-5xl font-bold text-center text-green-800">
           <span className="text-orange-600">~ </span> 
             Fitur Kami
@@ -95,7 +95,7 @@ export default function Home() {
         <p className="text-center mb-16">
           apa yang bisa anda dapat dari kami
         </p>
-        <div className="flex gap-2">
+        <div className="flex flex-col md:flex-row gap-2">
           
           <div className="border p-5 rounded-xl basis-1/3 shadow-sm">
             <h2 className="flex gap-2 text-lg font-bold   items-center">
@@ -129,7 +129,7 @@ export default function Home() {
             </p>
           </div>
         </div> 
-      </section> */}
+      </section>
 
       {/* benefit section */}
       {/* <section className="py-20 px-64">
