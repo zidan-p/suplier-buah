@@ -39,20 +39,23 @@ export default function Home() {
                 menyediakan berbagai buah musiman dan lokal, kustomisasi tergantung kebutuhan anda. Komitmen kami untuk memberikan kulaitas
               </p>
               <div className="mt-10 ">
-                <button className={cn(
-                  "bg-orange-400 text-center px-6 py-1 rounded relative flex gap-3 items-center group",
-                  " transition-all overflow-hidden mx-auto md:mx-0")
-                }>
-                  <div className="group-hover:-translate-x-5 transition-all">
-                    <p className="text-xl font-bold text-white box-content ">
-                      Pesan Sekarang
-                    </p>
-                    <small className="text-white ">
-                      - 16 klien telah percaya kepada kami -
-                    </small>
-                  </div>
-                  <RightArrow className="w-7 text-white absolute right-0 translate-x-6 group-hover:translate-x-0 transition" />
-                </button>
+                <a href="https://wa.me/6281239788731" target="_blank" rel="noopener noreferrer">
+                  <button className={cn(
+                    "bg-orange-400  text-center px-6 py-1 rounded relative flex gap-3 items-center group",
+                    " transition-all overflow-hidden mx-auto md:mx-0"
+                  )}>
+                    <div className="group-hover:-translate-x-5 transition-all">
+                      <p className="text-xl font-bold text-white box-content ">
+                        Pesan Sekarang
+                      </p>
+                      <small className="text-white ">
+                        - 16 klien telah percaya kepada kami -
+                      </small>
+                    </div>
+                    <RightArrow className="w-7 text-white absolute right-0 translate-x-6 group-hover:translate-x-0 transition" />
+                  </button>
+
+                </a>
               </div>
             </div>
             <div className="basis-2/3">
@@ -382,7 +385,8 @@ export default function Home() {
             <div className="h-full w-full bg-black/70 absolute" />
             <div className=" justify-center relative flex flex-col h-full w-full ">
               <p className="text-white text-center font-bold">Dan Lebih Banyak Lagi</p>
-              <button className={cn(
+              <a href="https://wa.me/6281239788731" target="_blank" rel="noopener noreferrer">
+                <button className={cn(
                   "bg-orange-400  px-6 py-1 mx-auto  rounded relative  flex gap-3 items-center group",
                   " transition-all overflow-hidden")
                 }>
@@ -393,6 +397,7 @@ export default function Home() {
                   </div>
                   <RightArrow className="w-7 text-white absolute right-0 translate-x-6 group-hover:translate-x-0 transition" />
                 </button>
+              </a>
             </div>
           </div>
         </div>
@@ -423,18 +428,20 @@ export default function Home() {
         <p className="text-center mb-4">
         Jangan biarkan bisnis Anda terhambat oleh pasokan yang tidak pasti atau pilihan yang terbatas. Dengan layanan kami, Anda mendapatkan jaminan pasokan buah segar, beragam pilihan produk berkualitas, dan komitmen yang tak tergoyahkan.
         </p>
-
-        <button className={cn(
-            "bg-orange-400  px-6 py-2 shadow rounded relative flex gap-3 items-center group",
-            " transition-all overflow-hidden mx-auto")
-          }>
-            <div className="group-hover:-translate-x-5 transition-all">
-              <p className="text-xl font-bold text-white box-content ">
-                Pesan Sekarang
-              </p>
-            </div>
-            <RightArrow className="w-7 text-white absolute right-0 translate-x-6 group-hover:translate-x-0 transition" />
-          </button>
+        
+        <a href="https://wa.me/6281239788731" target="_blank" rel="noopener noreferrer">
+          <button className={cn(
+              "bg-orange-400  px-6 py-2 shadow rounded relative flex gap-3 items-center group",
+              " transition-all overflow-hidden mx-auto")
+            }>
+              <div className="group-hover:-translate-x-5 transition-all">
+                <p className="text-xl font-bold text-white box-content ">
+                  Pesan Sekarang
+                </p>
+              </div>
+              <RightArrow className="w-7 text-white absolute right-0 translate-x-6 group-hover:translate-x-0 transition" />
+            </button>
+        </a>
       </section>
 
 
