@@ -34,11 +34,6 @@ export function Navbar(){
       <h1 className={"font-bold text-white text-xl  "}>Banyuwangi Supplier</h1>
       <ul className="hidden md:flex gap-5">
         <li>
-          <Link href={"/blog"} className="hover:underline underline-offset-2 transition-all">
-          Blog
-          </Link>
-        </li>
-        <li>
           <a className="hover:underline underline-offset-2" href="https://wa.me/6281217692430">
           Contact Us
           </a>

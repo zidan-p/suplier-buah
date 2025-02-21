@@ -31,7 +31,7 @@ export default function Home() {
         <div className="flex flex-col justify-center gap-10 items-center h-full container mx-auto">
           <div className="flex flex-col lg:flex-row md:flex-row w-full justify-between gap-20 items-center">
             <div className="basis-1/3 text-center md:text-start">
-              <h1 className={" text-5xl font-bold text-white mb-2"}>
+              <h1 className={"text-3xl md:text-5xl font-bold text-white mb-2"}>
                 Supplier buah 
                 <span className='text-yellow-500'> terpercaya </span> 
               </h1>
@@ -66,8 +66,8 @@ export default function Home() {
                       height={"400"}
                     />
                   }
-                  title='Produksi Telur'
-                  description='Hasil Telur dari kami setiap harinya. rata-rata bisa menghasilkan 2 peti lebih'
+                  title='Buah Nanas'
+                  description='Buah yang datang dari petani langsung, buah yang berkualitas dan berkualitas'
                 />
             </div>
           </div>
@@ -147,15 +147,15 @@ export default function Home() {
         <div className="flex flex-col md:flex-row md:justify-center gap-10 items-center mb-20 md:mb-10">
           <div className="basis-1/2">
             <ImgCard
-              title='Pengawasan Kami'
-              description='setiap ayam yang kami polihara selalu dalam pengawasan kami 24 jam. kebutuhan mereka selalu kita penuhi untuk hasil produk yang memuaskan'
+              title='Pengepakan'
+              description='Pengepakan dengan peti yang erat dan kuat, menjamin kualitas barang sampai ke tujuan'
               img={<Image src={LoadGoodsIMG} alt='ini adalah chicken farm' className="rounded-lg" width={"600"} height={"600"} />}
             />
           </div>
           <div className="basis-1/2">
             <h2 className='text-3xl font-bold mb-8 text-green-800'>Pemasokan Rutin</h2>
             <p className='text-lg'>
-            Kami memastikan pasokan kopi Anda tetap lancar dan tersedia sesuai kebutuhan. Dengan sistem distribusi yang andal dan terorganisir, pelanggan tidak perlu khawatir akan kekurangan stok atau ketidakpastian dalam pengiriman. Ketersediaan kopi berkualitas tetap terjaga untuk memenuhi permintaan bisnis atau konsumsi pribadi Anda setiap saat.
+            Kami memastikan pasokan Anda tetap lancar dan tersedia sesuai kebutuhan. Dengan sistem distribusi yang andal dan terorganisir, pelanggan tidak perlu khawatir akan kekurangan stok atau ketidakpastian dalam pengiriman. Ketersediaan kopi berkualitas tetap terjaga untuk memenuhi permintaan bisnis atau konsumsi pribadi Anda setiap saat.
             </p>
           </div>
         </div>
@@ -163,8 +163,8 @@ export default function Home() {
         <div className="flex flex-col md:flex-row-reverse md:justify-center gap-10 items-center mb-20 md:mb-10">
           <div className="basis-1/2">
             <ImgCard
-              title='Pengawasan Kami'
-              description='setiap ayam yang kami polihara selalu dalam pengawasan kami 24 jam. kebutuhan mereka selalu kita penuhi untuk hasil produk yang memuaskan'
+              title='Jambu Kristal'
+              description='Buah selalu tersedia setiap waktu, stok kami yang selalu bergulir untuk kebutuhan anda'
               img={<Image src={CrisltallIMG} alt='ini adalah chicken farm' className="rounded-lg" width={"500"} height={"600"} />}
             />
           </div>
@@ -179,8 +179,8 @@ export default function Home() {
         <div className="flex flex-col md:flex-row md:justify-center gap-10 items-center mb-20 md:mb-10">
           <div className="basis-1/2">
             <ImgCard
-              title='Pengawasan Kami'
-              description='setiap ayam yang kami polihara selalu dalam pengawasan kami 24 jam. kebutuhan mereka selalu kita penuhi untuk hasil produk yang memuaskan'
+              title='Jeruk Lokal'
+              description='Pilihan terbaik selalu mejadi prioritas kami sebagai penyedia'
               img={<Image src={Orange2IMG} alt='ini adalah chicken farm' className="rounded-lg" width={"600"} height={"600"} />}
             />
           </div>
@@ -398,6 +398,23 @@ export default function Home() {
         </div>
       </section>
 
+      {/* more view */}
+      <section className="py-20 px-5 lg:px-20 xl:px-64">
+        <div className="flex flex-col sm:flex-row justify-center items-center gap-10">
+          <div className="">
+          <h1 className="text-5xl font-bold mb-2 text-green-800 text-center sm:text-start">
+            Preview Proses Pemuatan
+          </h1>
+          <p className="mb-16 text-center sm:text-start">
+            Setipa Barang selalu dilakukan review sebelum proses pengemuatan menuju klien.
+          </p>
+          </div>
+          <video className='mb-3 sm:max-w-sm rounded border-x-4 border-x-orange-400' autoPlay loop muted>
+            <source src={"/load-fruit.mp4"}  type='video/mp4'/>
+          </video>  
+        </div> 
+      </section>
+
       {/* last call to action */}
       <section className="py-20 px-5 lg:px-20 xl:px-64">
         <h1 className="text-5xl font-bold text-center mb-2 text-green-800">
@@ -420,6 +437,8 @@ export default function Home() {
           </button>
       </section>
 
+
+
       {/* Footer */}
       <footer className={cn(
         "md:px-36 md:py-20 md:flex-row",
@@ -434,6 +453,9 @@ export default function Home() {
             AufaJayaSejahtera
           </h3>
           <p className="text-gray text-center md:text-start">2024, AufaJayaSejahtera ©</p>
+          <p className="text-sm">
+            RT/RW 03/01, Dusun Krajan, Desa Bagorejo, Kecamatan Srono
+          </p>
         </div>
         <div className="flex md:block items-center gap-3">
           <p className="text-center text-sm">Contact Us</p>
